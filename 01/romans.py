@@ -22,12 +22,16 @@ def int_to_roman(num):
       'D': 500, 
       'M': 1000 
       } 
+      
       total = 0 
       prev_value = 0
+      
       for char in reversed(s):
-      value = roman_to_int_map[char]
+        value = roman_to_int_map[char]
       if value < prev_value: 
-       total -= value 
+        total -= value 
       else: total += value 
          prev_value = value 
+    
       return total 
+   
