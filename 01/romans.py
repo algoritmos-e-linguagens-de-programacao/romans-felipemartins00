@@ -12,7 +12,7 @@ def int_to_roman(num):
    
    traducao = milhar[num2] + centena[num3] + dezena[num4] + unidade[num5]
    
-   return(traducao)
+return traducao
    
 def roman_to_int(s):
       roman_to_int_map = { 
@@ -22,18 +22,20 @@ def roman_to_int(s):
       'L': 50, 
       'C': 100,
       'D': 500, 
-      'M': 1000 
+      'M': 1000
       } 
       
       total = 0 
       prev_value = 0
-      
-      for char in reversed(s):
+   
+for char in reversed(s):
         value = roman_to_int_map[char]
+         
         if value < prev_value: 
-           total -= value 
-      else: 
-         total += value 
+            total -= value 
+        else: 
+            total += value 
+           
          prev_value = value 
     
 return total 
