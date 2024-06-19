@@ -4,14 +4,16 @@ def int_to_roman(num):
    num3 = (num % 1000) // 100
    num4 = (num % 1000) // 10
    num5 = num % 10
+   
    milhar = [" ", "M" , "MM" , "MMM"]
    centena = [" ", "C" , "CC", "CCC", "CD" , "D" , "DC" , "DCC"]
    dezena = [" " , "X" , "XX" , "XXX" , "XL" , "L" , "LX" , "LXX"]
    unidade = [" ", "I" , "II" , "III" , "IV", "V", "VI","VII"]
+   
    traducao = milhar[num2] + centena[num3] + dezena[num4] + unidade[num5]
-   return(traducao)
-
-
+   
+   return(traducao)   
+   
    def roman_to_int(s):
       roman_to_int_map = { 
       'I': 1,
@@ -28,10 +30,11 @@ def int_to_roman(num):
       
       for char in reversed(s):
         value = roman_to_int_map[char]
-      if value < prev_value: 
-        total -= value 
-      else: total += value 
+        if value < prev_value: 
+           total -= value 
+      else: 
+         total += value 
          prev_value = value 
     
-      return total 
+   return total 
    
