@@ -25,8 +25,8 @@ def roman_to_int(s):
     'M': 1000
 } 
       
-     total = 0 
-     prev_value = 0
+total = 0 
+prev_value = 0
    
 for char in reversed(s):
     value = roman_to_int_map[char]
