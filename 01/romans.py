@@ -12,9 +12,9 @@ def int_to_roman(num):
    
    traducao = milhar[num2] + centena[num3] + dezena[num4] + unidade[num5]
    
-   return(traducao)   
+   return(traducao)
    
-   def roman_to_int(s):
+def roman_to_int(s):
       roman_to_int_map = { 
       'I': 1,
       'V': 5, 
@@ -36,4 +36,4 @@ def int_to_roman(num):
          total += value 
          prev_value = value 
     
-   return total 
+return total 
