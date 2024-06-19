@@ -28,7 +28,7 @@ def roman_to_int(s):
       total = 0 
       prev_value = 0
    
-for char in reversed(s):
+ for char in reversed(s):
         value = roman_to_int_map[char]
          
         if value < prev_value: 
