@@ -15,7 +15,7 @@ def int_to_roman(num):
 return traducao
    
 def roman_to_int(s):
-      roman_to_int_map = { 
+    roman_to_int_map = { 
       'I': 1,
       'V': 5, 
       'X': 10, 
@@ -23,7 +23,7 @@ def roman_to_int(s):
       'C': 100,
       'D': 500, 
       'M': 1000
-      } 
+ } 
       
       total = 0 
       prev_value = 0
